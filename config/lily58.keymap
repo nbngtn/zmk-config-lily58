@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #define DEFAULT 0
-#define LEFT 1
-#define RIGHT 2
+#define FIRST 1
+#define SECOND 2
 #define THIRD 3
 #define FORTH 4
 
@@ -35,7 +35,7 @@
             >;
         };
 
-        left_layer {
+        first_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
 // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
@@ -51,7 +51,7 @@
             >;
         };
 
-        right_layer {
+        second_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
 // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
