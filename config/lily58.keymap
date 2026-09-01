@@ -113,14 +113,14 @@
         fn_media_layer {
             // ------------------------------------------------------------------------------------------------------------
             // | F1 | F2 | F3 | F4 | F5 | F6 |                 | F7 | F8 | F9 | F10 | F11 | F12 |
-            // | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |                 | TRANS | C_PREV | C_PP | C_NEXT | TRANS | DEL |
-            // | CAPS | TRANS | TRANS | TRANS | TRANS | TRANS |                 | TRANS | C_VOL_UP | C_VOL_DN | C_MUTE | TRANS | TRANS |
+            // | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |                 | C_PREV | C_PP | C_NEXT | TRANS | TRANS | DEL |
+            // | CAPS | TRANS | TRANS | TRANS | TRANS | TRANS |                 | C_MUTE | C_VOL_DN | C_VOL_UP | TRANS | TRANS | TRANS |
             // | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | MO_SYSTEM | MO_SYSTEM | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
             //                           | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
             bindings = <
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-                &trans &trans &trans &trans &trans &trans &trans &kp C_PREV &kp C_PP &kp C_NEXT &trans &kp DEL
-                &kp CAPS &trans &trans &trans &trans &trans &trans &trans &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE &trans
+                &trans &trans &trans &trans &trans &trans &kp C_PREV &kp C_PP &kp C_NEXT &trans &trans &kp DEL
+                &kp CAPS &trans &trans &trans &trans &trans &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &mo SYSTEM &mo SYSTEM &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans
             >;
