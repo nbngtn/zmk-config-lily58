@@ -82,13 +82,13 @@
             // ------------------------------------------------------------------------------------------------------------
             // | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |                 | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
             // | TRANS | TRANS | TRANS | UP    | TRANS | TRANS |                 | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
-            // | TRANS | TRANS | LEFT  | DOWN  | RIGHT | TRANS |                 | TRANS | LG/LEFT | LG/DOWN | LG/UP | LG/RIGHT | TRANS |
+            // | TRANS | TRANS | LEFT  | DOWN  | RIGHT | TRANS |                 | HOME  | PG_DN   | PG_UP   | END   | TRANS    | TRANS |
             // | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
             //                           | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
             bindings = <
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &kp UP &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans &kp LG(LEFT) &kp LG(DOWN) &kp LG(UP) &kp LG(RIGHT) &trans
+                &trans &trans &kp LEFT &kp DOWN &kp RIGHT &trans &kp HOME &kp PG_DN &kp PG_UP &kp END &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans
             >;
